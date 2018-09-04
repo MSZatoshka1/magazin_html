@@ -1,0 +1,55 @@
+._font_size(@fz){ // размер
+    font-size: @fz/16rem;
+}
+.background_full(@url){// фон картинки на фул
+    background-image: url(@url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+._row(@w,@kol){
+    width: @w * 1%;
+    @m: (100 - @w * @kol)/(@kol*2) * 1%;
+    margin-left: @m; margin-right: @m;
+}
+._row_rod(@w,@kol){
+    @m: (100 - @w * @kol)/(@kol*2) * 1%;
+    margin-left:-@m; margin-right: -@m;
+
+}
+._f_sb_c(@c:0){
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    & when (@c = 1){align-items: center;}
+}
+._f_null_c(){
+    display: flex;
+    align-items: center;
+}
+ 
+
+
+
+
+// ------
+._full_menu(@top:0){
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    background: @fon_gradient;
+    top:@top;
+    li{
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+        a{
+            display: block;
+            width: 100%;
+            padding: 5px 5px;
+        }
+        &:last-child{
+            border-bottom:0;  
+        }
+    }
+}

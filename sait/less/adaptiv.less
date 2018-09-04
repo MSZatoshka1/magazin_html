@@ -1,0 +1,250 @@
+ 
+@media screen and (max-width:1280px){
+    article.banner .claider{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .img_claid{
+            margin: 0;
+            width: 100%;
+        }
+        .left{
+            margin-left: 0; 
+        }
+        .right{
+            margin-left: 0; 
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    button{
+        padding: 10px 25px;
+    }
+    .games{
+        ._row_rod(26,3);
+        >.block{
+            ._row(26,3);
+        }
+    } 
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 13px;
+    }
+    button{
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+    .fon_name{
+        margin: 30px 0;
+    }
+    nav{
+        .nav{
+            #logo{
+                max-width: 100px;
+            }
+            .get_full{
+                span.get_menu{
+                    display: block;
+                }
+                >ul.menu{
+                    display: none;
+                }
+                ul.funcsial{
+                    width: 100%;
+                }
+            }
+            .get_full{ // при наведение показывает названия меню
+                &:hover{
+                    >ul.menu {
+                        ._full_menu();
+                    }
+                }
+            }
+        }
+    }
+     .games{
+        ._row_rod(36,2);
+        >.block{
+            ._row(36,2);
+        }
+    }
+    article.banner{
+        .claider{
+            .img_claid{
+                min-height: 400px;
+            }
+        }
+        .opicania{
+            .text {
+                display: block;
+                text-align:center;
+                .perexod{
+                    display: none;
+                }
+            }
+        }
+    }
+    article.acsia_full{
+        .acsia{
+            .block.acsia_{
+                padding: 10px 5px;
+            }
+            .Char{
+                font-size: 60px;
+            }
+        }  
+    }  
+}
+@media screen and (max-width:625px){
+    button{
+        padding: 10px 15px;
+    }
+    .fon_name{
+        margin: 25px 0;
+        font-size: 1.375rem;
+    }
+
+    article.banner .opicania{
+        padding: 10px;
+        .text_2{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 15px;
+            .kynit{
+                order: -2;
+            }
+            .infa{
+                justify-content: center;
+                width: 100%;
+                margin-top:20px;
+            }
+            .podroblee{
+                order: -2;
+            }
+        }
+    }
+    footer {
+        .botton_full{
+            width: auto;
+        }
+        .niz_footer{
+            display: block;
+            .pyblik_infa{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .pyblik_doctoinct{
+            margin-bottom: 30px;
+        } 
+    } 
+    article.acsia_full .acsia{
+        .Char{
+            font-size: 30px;
+        }
+        .block.acsia_{
+            .ctoimoct{
+                margin-bottom: 20px;
+            }
+            justify-content: center;
+            .date{
+                display: none;
+            }
+        }
+
+    } 
+}
+@media screen and (max-width:425px){
+    button{
+        font-size: 1.1rem;
+    }
+    .fon_name{
+        margin: 20px 0;
+    }
+    article.banner .opicania .text .doctyp{
+        font-size: 1.375rem;
+    }
+    nav{
+        .nav{
+            .get_full{
+                ul.funcsial{
+                    display: none;
+                }
+                span{
+                    display: block;
+                }
+                &:hover{
+                     ul.funcsial{//  показать меню функционала
+                        ._full_menu();
+                     }
+                }   
+            }
+            li.get_full:hover{ // При наведение показывает наименования валюты
+                >ul.baluta{
+                    display: flex;
+                }
+            }
+        }
+    }
+    article.banner .claider .img_claid{
+        min-height: 220px;
+    }
+    .games{
+        ._row_rod(70,1);
+        >.block{
+            ._row(70,1);
+        }
+    }
+    article.acsia_full{
+        border-top: 2px solid beige;
+        .acsia{
+            padding: 10px 0px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid beige;
+            ._row_rod(40,2);
+            >.block{
+                ._row(40,2);
+            }
+            .Char{
+                display: none;
+                font-size: 15px;
+            }
+            flex-wrap: wrap;
+            .block.acsia_{
+                margin: 20px auto 0;
+                width: 50%;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+        footer{
+        .pyblik_doctoinct{
+           flex-direction: column;
+           align-items: center;
+           ._font_size(18); 
+           li{
+                margin-bottom: 10px;
+           }
+        }
+        .niz_footer{
+            .pyblik_infa{
+                text-align: center;       
+            } 
+        }
+    } 
+}
+@media screen and (max-width:320px){
+    article.banner{
+        .claider{
+            .img_claid{
+                min-height: 150px;  
+            }
+        }
+    }  
+    button{
+        padding: 10px 10px;
+    }  
+}

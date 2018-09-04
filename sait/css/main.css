@@ -1,0 +1,604 @@
+html {
+  font-size: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+button {
+  border: 0;
+}
+img {
+  max-width: 100%;
+}
+.conteiner {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+article .conteiner {
+  overflow: hidden;
+}
+body {
+  background-image: linear-gradient(to right, #000000 0%, #b49191 100%);
+}
+button {
+  background-color: #48db15;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+.ckidka {
+  color: white;
+  margin-right: 30px;
+}
+.fon_name {
+  background-color: white;
+  font-family: Arial;
+  font-size: 1.875rem;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  padding: 15px 0px;
+  font-weight: normal;
+}
+.games {
+  margin-left: -3.5%;
+  margin-right: -3.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block {
+  color: white;
+  width: 18%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  margin-bottom: 25px;
+}
+.block:last-child {
+  margin-bottom: 0;
+}
+.block .zbezdi {
+  font-family: "ElegantIcons";
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: rgba(243, 230, 46, 0.911);
+  display: flex;
+  justify-content: center;
+}
+.block .zbezdi .zvezda {
+  margin: 0px 5px;
+}
+.block .img {
+  font-size: 0;
+}
+.block .img img {
+  min-width: 100%;
+}
+.block .opicania_games {
+  background-color: rgba(174, 172, 172, 0.53);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.block .opicania_games .name {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav #logo {
+  max-width: 150px;
+}
+nav .nav ul {
+  display: flex;
+}
+nav .nav ul a:hover {
+  color: red;
+}
+nav .nav .get_full {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+nav .nav .get_full span {
+  font-family: "ElegantIcons";
+  color: #fff;
+  font-size: 1.125rem;
+  display: none;
+}
+nav .nav .get_full span:hover {
+  color: red;
+}
+nav .nav .get_full ul.menu li {
+  margin: 0 10px;
+}
+nav .nav li.get_full:hover > ul.baluta {
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(to right, #000000 0%, #b49191 100%);
+  top: 0;
+}
+nav .nav li.get_full:hover > ul.baluta li {
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+nav .nav li.get_full:hover > ul.baluta li a {
+  display: block;
+  width: 100%;
+  padding: 5px 5px;
+}
+nav .nav li.get_full:hover > ul.baluta li:last-child {
+  border-bottom: 0;
+}
+nav .nav li.get_full:hover > ul.baluta li a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav .nav ul.funcsial {
+  justify-content: flex-start;
+}
+nav .nav ul.funcsial ul.baluta {
+  display: none;
+}
+nav .nav ul.funcsial ul.baluta li a {
+  font-family: 'Times New Roman';
+}
+nav .nav ul.funcsial li {
+  margin: 0 10px;
+}
+nav .nav ul.funcsial li a {
+  font-family: "ElegantIcons";
+  font-size: 1.25rem;
+}
+nav .nav ul.funcsial li a.nuz {
+  position: relative;
+}
+nav .nav ul.funcsial li a.nuz:after {
+  font-size: 0.875rem;
+  font-family: serif;
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+}
+nav .nav ul.funcsial li a.nuz.baluta_ed:after {
+  font-family: "ElegantIcons";
+  content: "3";
+}
+nav .nav ul.funcsial li a.nuz.korzina:after {
+  content: "0";
+}
+nav .nav ul.funcsial li a.nuz.love:after {
+  content: "0";
+}
+nav .nav ul.bxod {
+  font-family: "ElegantIcons";
+  font-size: 1.25rem;
+}
+nav .nav ul.bxod li.name {
+  margin-left: 10px;
+}
+article.banner .conteiner {
+  overflow: visible;
+}
+article.banner .claider {
+  color: white;
+  font-size: 2.8125rem;
+  font-family: "ElegantIcons";
+  display: grid;
+  grid-auto-columns: 50px 1fr 50px;
+  grid-template-areas: " . img . " " left_ img right_" ". img .";
+}
+article.banner .claider .img_claid {
+  min-height: 600px;
+  background-image: url("../img/Yakuza0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-area: img;
+  margin: 0px -50px;
+}
+article.banner .claider .str {
+  cursor: pointer;
+}
+article.banner .claider .str:hover {
+  color: green;
+}
+article.banner .claider .left {
+  grid-area: left_;
+  margin-left: -50px;
+}
+article.banner .claider .right {
+  grid-area: right_;
+  margin-left: 55px;
+}
+article.banner .opicania {
+  padding: 20px;
+  background-color: rgba(174, 172, 172, 0.53);
+}
+article.banner .opicania .text {
+  position: relative;
+  display: grid;
+  grid-template-areas: "doctyp . perexod";
+  grid-template-columns: 1fr auto 1fr;
+}
+article.banner .opicania .text .doctyp {
+  grid-area: doctyp;
+  font-size: 1.875rem;
+  font-family: "Arial";
+}
+article.banner .opicania .text .perexod {
+  grid-area: perexod;
+  display: flex;
+  align-items: center;
+}
+article.banner .opicania .text .perexod li {
+  margin: 5px;
+}
+article.banner .opicania .text .perexod li a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 360px;
+  background-color: #000;
+}
+article.banner .opicania .text .perexod li a.activ,
+article.banner .opicania .text .perexod li a:hover {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+article.banner .opicania .text_2 {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+article.banner .opicania .text_2 .infa {
+  display: flex;
+  align-items: center;
+  font-size: 1.5625rem;
+}
+article.acsia_full .acsia {
+  margin-left: -3.66666667%;
+  margin-right: -3.66666667%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+article.acsia_full .acsia .block {
+  width: 26%;
+  margin-left: 3.66666667%;
+  margin-right: 3.66666667%;
+  margin-bottom: 0;
+}
+article.acsia_full .acsia .block .opicania_games .name {
+  margin-bottom: 0;
+}
+article.acsia_full .acsia .block.acsia_ {
+  color: white;
+  padding: 10px 0px;
+  border: 3px solid white;
+  border-radius: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-self: stretch;
+}
+article.acsia_full .acsia .block.acsia_ .ctoimoct {
+  text-align: center;
+  font-size: 1.5625rem;
+  color: red;
+}
+article.acsia_full .acsia .block.acsia_ .date {
+  text-align: center;
+  font-size: 1.25rem;
+}
+article.acsia_full .acsia .Char {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Arial";
+  user-select: none;
+}
+footer {
+  border-top: 3px solid white;
+  padding: 20px 0px;
+  color: white;
+}
+footer .pyblik_doctoinct {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer .niz_footer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+footer .niz_footer .pyblik_infa {
+  width: 40%;
+}
+footer .botton_full {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+footer .botton_full button {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1280px) {
+  article.banner .claider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  article.banner .claider .img_claid {
+    margin: 0;
+    width: 100%;
+  }
+  article.banner .claider .left {
+    margin-left: 0;
+  }
+  article.banner .claider .right {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  button {
+    padding: 10px 25px;
+  }
+  .games {
+    margin-left: -3.66666667%;
+    margin-right: -3.66666667%;
+  }
+  .games > .block {
+    width: 26%;
+    margin-left: 3.66666667%;
+    margin-right: 3.66666667%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+  .fon_name {
+    margin: 30px 0;
+  }
+  nav .nav #logo {
+    max-width: 100px;
+  }
+  nav .nav .get_full span.get_menu {
+    display: block;
+  }
+  nav .nav .get_full > ul.menu {
+    display: none;
+  }
+  nav .nav .get_full ul.funcsial {
+    width: 100%;
+  }
+  nav .nav .get_full:hover > ul.menu {
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000000 0%, #b49191 100%);
+    top: 0;
+  }
+  nav .nav .get_full:hover > ul.menu li {
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+  }
+  nav .nav .get_full:hover > ul.menu li a {
+    display: block;
+    width: 100%;
+    padding: 5px 5px;
+  }
+  nav .nav .get_full:hover > ul.menu li:last-child {
+    border-bottom: 0;
+  }
+  .games {
+    margin-left: -7%;
+    margin-right: -7%;
+  }
+  .games > .block {
+    width: 36%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  article.banner .claider .img_claid {
+    min-height: 400px;
+  }
+  article.banner .opicania .text {
+    display: block;
+    text-align: center;
+  }
+  article.banner .opicania .text .perexod {
+    display: none;
+  }
+  article.acsia_full .acsia .block.acsia_ {
+    padding: 10px 5px;
+  }
+  article.acsia_full .acsia .Char {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 625px) {
+  button {
+    padding: 10px 15px;
+  }
+  .fon_name {
+    margin: 25px 0;
+    font-size: 1.375rem;
+  }
+  article.banner .opicania {
+    padding: 10px;
+  }
+  article.banner .opicania .text_2 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  article.banner .opicania .text_2 .kynit {
+    order: -2;
+  }
+  article.banner .opicania .text_2 .infa {
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  article.banner .opicania .text_2 .podroblee {
+    order: -2;
+  }
+  footer .botton_full {
+    width: auto;
+  }
+  footer .niz_footer {
+    display: block;
+  }
+  footer .niz_footer .pyblik_infa {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .pyblik_doctoinct {
+    margin-bottom: 30px;
+  }
+  article.acsia_full .acsia .Char {
+    font-size: 30px;
+  }
+  article.acsia_full .acsia .block.acsia_ {
+    justify-content: center;
+  }
+  article.acsia_full .acsia .block.acsia_ .ctoimoct {
+    margin-bottom: 20px;
+  }
+  article.acsia_full .acsia .block.acsia_ .date {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  button {
+    font-size: 1.1rem;
+  }
+  .fon_name {
+    margin: 20px 0;
+  }
+  article.banner .opicania .text .doctyp {
+    font-size: 1.375rem;
+  }
+  nav .nav .get_full ul.funcsial {
+    display: none;
+  }
+  nav .nav .get_full span {
+    display: block;
+  }
+  nav .nav .get_full:hover ul.funcsial {
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000000 0%, #b49191 100%);
+    top: 0;
+  }
+  nav .nav .get_full:hover ul.funcsial li {
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+  }
+  nav .nav .get_full:hover ul.funcsial li a {
+    display: block;
+    width: 100%;
+    padding: 5px 5px;
+  }
+  nav .nav .get_full:hover ul.funcsial li:last-child {
+    border-bottom: 0;
+  }
+  nav .nav li.get_full:hover > ul.baluta {
+    display: flex;
+  }
+  article.banner .claider .img_claid {
+    min-height: 220px;
+  }
+  .games {
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+  .games > .block {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  article.acsia_full {
+    border-top: 2px solid beige;
+  }
+  article.acsia_full .acsia {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid beige;
+    margin-left: -5%;
+    margin-right: -5%;
+    flex-wrap: wrap;
+  }
+  article.acsia_full .acsia > .block {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  article.acsia_full .acsia .Char {
+    display: none;
+    font-size: 15px;
+  }
+  article.acsia_full .acsia .block.acsia_ {
+    margin: 20px auto 0;
+    width: 50%;
+  }
+  article.acsia_full .acsia:last-child {
+    border-bottom: 0;
+  }
+  footer .pyblik_doctoinct {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.125rem;
+  }
+  footer .pyblik_doctoinct li {
+    margin-bottom: 10px;
+  }
+  footer .niz_footer .pyblik_infa {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  article.banner .claider .img_claid {
+    min-height: 150px;
+  }
+  button {
+    padding: 10px 10px;
+  }
+}
